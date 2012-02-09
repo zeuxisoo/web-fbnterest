@@ -7,4 +7,4 @@ node_modules/*
 public/avatar/*
 .sass-cache
 main.css
-app.js
+configs/app.js
