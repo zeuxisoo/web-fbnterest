@@ -1,0 +1,79 @@
+#loading(style='display: none; background-color: red;')
+	| Loading...
+header#hd
+	.logo
+		.wrapper
+			h1
+				a(href='#')= siteName
+			.share!= partial('shared/share-button')
+			.right
+				ul
+					li.tooltip(title='Program: @zeuxisoo (Node.js+MongoDB), Layout: fbinterest-static') About
+					- if (!user)
+						li.fb-login-button(scope='user_photos')
+							a.login-facebook(href="/signin")
+								span Login with Facebook
+					- else
+						li#fb-user
+							img#image(height='0px', width='0px')
+							span#name= user.displayName
+	nav
+		- if (user)
+			.top-menu
+				ul
+					li
+						select#albums-list(data-placeholder='Select one of your albums', disabled='', style='width: 350px;')
+							option
+						&nbsp;
+						a#generate.btn(href='#') Generate
+		- else
+			.top-menu.top-menu-album
+				ul
+					li Everything
+					li Video
+					li Discussions
+					li Gifts
+.wrapper
+	#bd
+		#container
+			- for(var i=0; i<50; i++)
+				.item
+					- var imageHeight = parseInt(Math.random() * 10 * 20 + 100) + "px"
+					- var mainImage = "http://placehold.it/192x" + imageHeight + "/" + randomColor() + "/"+ randomColor() +"&text=HelloWorld"
+					- var miniImage1 = "http://placehold.it/30x30/" + randomColor() + "/"+ randomColor() +"&text=min"
+					- var miniImage2 = "http://placehold.it/30x30/" + randomColor() + "/"+ randomColor() +"&text=min"
+					img(src=mainImage, height=imageHeight, width="192px", alt="")
+					h2.lipsum
+					.comments
+						| 9
+						| comments
+					.chat
+						.chatbox
+							img(height="30px", src=miniImage1, width="30px", alt="")
+							b ominick Snyder
+							via
+							b Colton Barton
+							onto
+							b et
+						.chatbox
+							img(height="30px", src=miniImage2, width="30px", alt="")
+							b Ashton Rose
+							p Tempore ut omnis impedit
+
+	script#item-template(type='text/x-handlebars-template')
+		.item
+			a(href='{{ link }}', target='_blank')
+				img.lazy(alt='{{ name }}', src='{{ image_url }}', width='192px')
+			h2 {{name}}
+			.comments {{comments_count}} comments
+			.chat
+				.chatbox
+					| {{likes_count}} likes
+				{{#list comments}}
+				.chatbox
+					img.lazy(alt='{{ username }}', height='30px', src='http://graph.facebook.com/{{user_id}}/picture', width='30px')
+					b {{ username }}
+					p {{ message }}
+				{{/list}}
+
+#fb-root

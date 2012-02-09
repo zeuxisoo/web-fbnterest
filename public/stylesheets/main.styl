@@ -1,0 +1,540 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+
+body
+	line-height: 1
+
+ol, ul
+	list-style: none
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+caption, th, td
+	text-align: left
+	font-weight: normal
+	vertical-align: middle
+
+q, blockquote
+	quotes: none
+
+q:before, q:after, blockquote:before, blockquote:after
+	content: none
+
+a img
+	border: none
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary
+	display: block
+
+body
+	background: #f5f2f2
+	font-family: "helvetica neue", sans-serif
+	font-size: 13px
+	color: #444
+	padding-top: 150px
+
+.text-shadow, #hd .logo .right ul, #hd nav
+	text-shadow: 0 1px 0 white
+
+.wrapper
+	width: 1200px
+	margin: 0 auto
+	position: relative
+
+#hd
+	background: #faf7f7
+	position: fixed
+	z-index: 100
+	top: 0
+	left: 0
+	width: 100%
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.7)
+
+#hd .logo
+	padding: 7px 0
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+
+#hd .logo h1
+	color: darkRed;
+	width: 400px;
+	height: 50px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 20px;
+	line-height: 50px;
+	font-family: "Zapfino", "Lucida Handwriting", georgia, serif;
+	font-style: italic;
+
+#hd .logo h1 a
+	position: relative
+	top: 10px
+	color: darkRed
+	color: inherit
+	text-decoration: inherit
+	cursor: inherit
+	text-shadow: 0 1px 0 white,0 5px 10px rgba(0, 0, 0, 0.125)
+
+#hd .logo .share
+	float: left
+	position: absolute
+	top: 0
+	left: 0
+	padding-top: 10px;
+	width: 300px;
+
+#hd .logo .share .share-twitter
+	float: left;
+
+#hd .logo .share .google-plus-one
+	float: left;
+	padding-left: 5px;
+
+#hd .logo .share .fb-like
+	padding-top: 0px;
+	padding-left: 5px;
+
+#hd .logo .right
+	float: right
+	position: absolute
+	top: 0
+	right: 0
+
+#hd .logo .right ul
+	font-weight: bold
+
+#hd .logo .right ul li
+	float: left
+	padding: 15px 27px 0 14px
+
+#hd nav
+	border-top: 1px solid white
+	padding: 10px 0
+
+#hd nav ul
+	text-align: center
+
+#hd nav ul li.nav-item
+	display: inline
+	margin: 0 2px
+
+#hd nav ul li.nav-item:after
+	content: "·"
+	padding-left: 7px
+	color: rgba(0, 0, 0, 0.3)
+
+#container
+	width: 1200px
+
+.item
+	width: 192px
+	float: left
+	padding: 15px 15px 0
+	margin: 0 7px 15px
+	font-size: 12px
+	background: white
+	box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4)
+	line-height: 1.5
+
+.item .comments
+	color: #8c7e7e
+	padding-bottom: 15px
+
+.item .chat
+	background: #f2f0f0
+	margin: 0 -15px
+
+.item .chatbox
+	border-top: 1px solid white
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+	padding: 15px 15px
+	padding-left: 50px
+	*zoom: 1
+
+.item .chatbox:after
+	content: ""
+	display: table
+	clear: both
+
+.item .chatbox:last-child
+	border-bottom: none
+
+.item .chatbox:first-child
+	color: #b29c9c
+
+.item .chatbox:first-child b
+	color: #8c7e7e
+
+.item .chatbox img
+	margin-left: -35px
+	float: left
+
+.item .chatbox b
+	font-weight: bold
+
+.chzn-container
+	font-size: 13px
+	position: relative
+	display: inline-block
+	zoom: 1
+	*display: inline
+
+.chzn-container .chzn-drop
+	background: #fff
+	border: 1px solid #aaa
+	border-top: 0
+	position: absolute
+	top: 29px
+	left: 0
+	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15)
+	z-index: 999
+
+.chzn-container-single .chzn-single
+	background-color: #fff
+	background-image: linear-gradient(top, #eeeeee 0%, #ffffff 50%)
+	border-radius: 4px
+	background-clip: padding-box
+	border: 1px solid #aaa
+	display: block
+	overflow: hidden
+	white-space: nowrap
+	position: relative
+	height: 26px
+	line-height: 26px
+	padding: 0 0 0 8px
+	color: #444
+	text-decoration: none
+
+.chzn-container-single .chzn-single span
+	margin-right: 26px
+	display: block
+	overflow: hidden
+	white-space: nowrap
+	-o-text-overflow: ellipsis
+	-ms-text-overflow: ellipsis
+	text-overflow: ellipsis
+
+.chzn-container-single .chzn-single abbr
+	display: block
+	position: absolute
+	right: 26px
+	top: 8px
+	width: 12px
+	height: 13px
+	font-size: 1px
+	background: url('/images/chosen-sprite.png') right top no-repeat
+
+.chzn-container-single .chzn-single abbr:hover
+	background-position: right -11px
+
+.chzn-container-single .chzn-single div
+	border-radius: 0 4px 4px 0
+	background-clip: padding-box
+	background: #ccc
+	background-image: linear-gradient(top, #cccccc 0%, #eeeeee 60%)
+	border-left: 1px solid #aaa
+	position: absolute
+	right: 0
+	top: 0
+	display: block
+	height: 100%
+	width: 18px
+
+.chzn-container-single .chzn-single div b
+	background: url('/images/chosen-sprite.png') no-repeat 0 1px
+	display: block
+	width: 100%
+	height: 100%
+
+.chzn-container-single .chzn-search
+	padding: 3px 4px
+	position: relative
+	margin: 0
+	white-space: nowrap
+	z-index: 1010
+
+.chzn-container-single .chzn-search input
+	background: url('/images/chosen-sprite.png') no-repeat 100% -22px, linear-gradient(top, #ffffff 85%, #eeeeee 99%)
+	margin: 1px 0
+	padding: 4px 20px 4px 5px
+	outline: 0
+	border: 1px solid #aaa
+	font-family: sans-serif
+	font-size: 1em
+
+.chzn-container-single .chzn-drop
+	border-radius: 0 0 4px 4px
+	background-clip: padding-box
+
+.chzn-container-single-nosearch .chzn-search input
+	position: absolute
+	left: -9000px
+
+.chzn-container-multi .chzn-choices
+	background-color: #fff
+	background-image: linear-gradient(top, #ffffff 85%, #eeeeee 99%)
+	border: 1px solid #aaa
+	margin: 0
+	padding: 0
+	cursor: text
+	overflow: hidden
+	height: 1%
+	position: relative
+
+.chzn-container-multi .chzn-choices li
+	float: left
+	list-style: none
+
+.chzn-container-multi .chzn-choices .search-field
+	white-space: nowrap
+	margin: 0
+	padding: 0
+
+.chzn-container-multi .chzn-choices .search-field input
+	color: #666
+	background: transparent
+	border: 0
+	padding: 5px
+	margin: 1px 0
+	outline: 0
+	box-shadow: none
+
+.chzn-container-multi .chzn-choices .search-field .default
+	color: #999
+
+.chzn-container-multi .chzn-choices .search-choice
+	border-radius: 3px
+	background-clip: padding-box
+	background-color: #e4e4e4
+	background-image: linear-gradient(top, #e4e4e4 0%, #eeeeee 70%)
+	color: #333
+	border: 1px solid #b4b4b4
+	line-height: 13px
+	padding: 3px 19px 3px 6px
+	margin: 3px 0 3px 5px
+	position: relative
+
+.chzn-container-multi .chzn-choices .search-choice span
+	cursor: default
+
+.chzn-container-multi .chzn-choices .search-choice-focus
+	background: #d4d4d4
+
+.chzn-container-multi .chzn-choices .search-choice .search-choice-close
+	display: block
+	position: absolute
+	right: 3px
+	top: 4px
+	width: 12px
+	height: 13px
+	font-size: 1px
+	background: url('/images/chosen-sprite.png') right top no-repeat
+
+.chzn-container-multi .chzn-choices .search-choice .search-choice-close:hover
+	background-position: right -11px
+
+.chzn-container-multi .chzn-choices .search-choice-focus .search-choice-close
+	background-position: right -11px
+
+.chzn-container .chzn-results
+	margin: 0 4px 4px 0
+	max-height: 190px
+	padding: 0 0 0 4px
+	position: relative
+	overflow-x: hidden
+	overflow-y: auto
+
+.chzn-container-multi .chzn-results
+	margin: -1px 0 0
+	padding: 0
+
+.chzn-container .chzn-results li
+	display: none
+	line-height: 80%
+	padding: 7px 7px 8px
+	margin: 0
+	list-style: none
+
+.chzn-container .chzn-results .active-result
+	cursor: pointer
+	display: list-item
+
+.chzn-container .chzn-results .highlighted
+	background: #3875d7
+	color: #fff
+
+.chzn-container .chzn-results li em
+	background: #feffde
+	font-style: normal
+
+.chzn-container .chzn-results .highlighted em
+	background: transparent
+
+.chzn-container .chzn-results .no-results
+	background: #f4f4f4
+	display: list-item
+
+.chzn-container .chzn-results .group-result
+	cursor: default
+	color: #999
+	font-weight: bold
+
+.chzn-container .chzn-results .group-option
+	padding-left: 20px
+
+.chzn-container-multi .chzn-drop .result-selected
+	display: none
+
+.chzn-container-active .chzn-single
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3)
+	border: 1px solid #5897fb
+
+.chzn-container-active .chzn-single-with-drop
+	border: 1px solid #aaa
+	box-shadow: 0 1px 0 #fff inset
+	background-color: #eee
+	background-image: linear-gradient(top, #ffffff 0%, #eeeeee 50%)
+	border-bottom-left-radius: 0
+	border-bottom-right-radius: 0
+
+.chzn-container-active .chzn-single-with-drop div
+	background: transparent
+	border-left: none
+
+.chzn-container-active .chzn-single-with-drop div b
+	background-position: -18px 1px
+
+.chzn-container-active .chzn-choices
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3)
+	border: 1px solid #5897fb
+
+.chzn-container-active .chzn-choices .search-field input
+	color: #111
+
+.chzn-disabled
+	cursor: default
+	opacity: 0.5
+
+.chzn-disabled .chzn-single
+	cursor: default
+
+.chzn-disabled .chzn-choices .search-choice .search-choice-close
+	cursor: default
+
+.chzn-rtl
+	direction: rtl
+	text-align: right
+
+.chzn-rtl .chzn-single
+	padding-left: 0
+	padding-right: 8px
+
+.chzn-rtl .chzn-single span
+	margin-left: 26px
+	margin-right: 0
+
+.chzn-rtl .chzn-single div
+	left: 0
+	right: auto
+	border-left: none
+	border-right: 1px solid #aaaaaa
+	border-radius: 4px 0 0 4px
+
+.chzn-rtl .chzn-choices li
+	float: right
+
+.chzn-rtl .chzn-choices .search-choice
+	padding: 3px 6px 3px 19px
+	margin: 3px 5px 3px 0
+
+.chzn-rtl .chzn-choices .search-choice .search-choice-close
+	left: 5px
+	right: auto
+	background-position: right top
+
+.chzn-rtl.chzn-container-single .chzn-results
+	margin-left: 4px
+	margin-right: 0
+	padding-left: 0
+	padding-right: 4px
+
+.chzn-rtl .chzn-results .group-option
+	padding-left: 0
+	padding-right: 20px
+
+.chzn-rtl.chzn-container-active .chzn-single-with-drop div
+	border-right: none
+
+.chzn-rtl .chzn-search input
+	background: url('/images/chosen-sprite.png') no-repeat -38px -22px, linear-gradient(top, #ffffff 85%, #eeeeee 99%)
+	padding: 4px 5px 4px 20px
+
+div#loading
+	text-align: center
+	color: white
+	position: fixed
+	right: 0
+	top: 0
+	width: 100px
+	font-size: 16px
+	height: 1.5em
+	line-height: 1.5em
+	z-index: 99999
+
+a
+	text-decoration: none
+
+a
+	text-decoration: none
+	outline: none
+	color: #333
+
+a:hover, a:active, a:focus
+	text-decoration: underline
+	color: #6ba5e4
+
+a.profile, a.login-facebook, span#name
+	color: blue
+
+a.generate
+	color: red
+
+#generate
+	display: none;
+
+#hd nav .top-menu-album ul li
+	display: inline
+	margin: 0 2px
+
+#hd nav .top-menu-album ul li::after
+	content: "·"
+	padding-left: 7px
+	color: rgba(0, 0, 0, 0.3)
+
+.btn
+	padding: 4px 10px 4px
+	font-size: 13px
+	line-height: 18px
+	color: #333
+	text-align: center
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75)
+	background-color: #FAFAFA
+	background-image: -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6)
+	background-image: -moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6)
+	background-image: -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6)
+	background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6)
+	background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6)
+	background-repeat: no-repeat
+	border: 1px solid #CCC
+	border-bottom-color: #BBB
+	border-radius: 4px
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05)
+	cursor: pointer
+	border-image: initial

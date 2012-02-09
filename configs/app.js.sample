@@ -1,0 +1,10 @@
+module.exports = {
+	"siteTitle": "FBinterest.Clone",
+	"siteName": "FBinterest.Clone",
+	"siteUrl": "http://localhost:3000",
+
+	"facebookAppId": "=== Your Facebook App ID ===",
+	"facebookAppSecretKey": "=== Your Facebook App Secret Key ===",
+
+	"mongoDSN": "mongodb://localhost/interest"
+}

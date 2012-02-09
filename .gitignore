@@ -1,0 +1,10 @@
+.DS_Store
+.*~
+*.php
+*.sqlite
+Guardfile
+node_modules/*
+public/avatar/*
+.sass-cache
+main.css
+app.js

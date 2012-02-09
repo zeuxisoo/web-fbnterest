@@ -1,0 +1,44 @@
+#loading(style='display: none; background-color: red;')
+	| Loading...
+header#hd
+	.logo
+		.wrapper
+			h1
+				a(href='#')= siteName
+			.share!= partial('shared/share-button')
+			.right
+				ul
+					li.tooltip(title='Program: @zeuxisoo (Node.js+MongoDB), Layout: fbinterest-static') About
+					li
+						a.generate(href='/') Generate
+					li
+						a.profile(href= profileUrl)
+							span= displayName
+							| 's Albums
+	nav
+		.top-menu.top-menu-album
+			ul
+				li Everything
+				li Video
+				li Discussions
+				li Gifts
+.wrapper
+	#bd!= content
+
+	script#item-template(type='text/x-handlebars-template')
+		.item
+			a(href='{{ link }}', target='_blank')
+				img.lazy(alt='{{ name }}', src='{{ image_url }}', width='192px')
+			h2 {{name}}
+			.comments {{comments_count}} comments
+			.chat
+				.chatbox
+					| {{likes_count}} likes
+				{{#list comments}}
+				.chatbox
+					img.lazy(alt='{{ username }}', height='30px', src='http://graph.facebook.com/{{user_id}}/picture', width='30px')
+					b {{ username }}
+					p {{ message }}
+				{{/list}}
+
+#fb-root
